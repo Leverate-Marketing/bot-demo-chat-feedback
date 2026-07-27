@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Conversation {
+  id        String    @id @default(uuid())
+  startedAt DateTime  @default(now())
+  endedAt   DateTime?
+  messages  Message[]
+}
+
+model Message {
+  id             String   @id @default(uuid())
+  conversationId String
+  conversation   Conversation @relation(fields: [conversationId], references: [id])
+  role           String   // "user" | "bot"
+  content        String
+  createdAt      DateTime @default(now())
+  feedback       Feedback[]
+
+  @@index([conversationId])
+}
+
+model Feedback {
+  id        String   @id @default(uuid())
+  messageId String
+  message   Message  @relation(fields: [messageId], references: [id])
+  rating    String   // "up" | "down"
+  comment   String?
+  status    String   @default("new") // for future KB pipeline: new | reviewed
+  createdAt DateTime @default(now())
+
+  @@index([messageId])
+}

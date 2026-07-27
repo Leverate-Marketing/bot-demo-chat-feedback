@@ -1,0 +1,34 @@
+[
+  {
+    "question": "What are your shipping times?",
+    "answer": "Standard shipping takes 3-5 business days. Express shipping takes 1-2 business days."
+  },
+  {
+    "question": "Do you offer refunds?",
+    "answer": "Yes, within 30 days of purchase with proof of purchase."
+  },
+  {
+    "question": "How much does it cost?",
+    "answer": "Pricing starts at $19/month for the basic plan. Check our pricing page for full details on all tiers."
+  },
+  {
+    "question": "What are your business hours?",
+    "answer": "We're open Monday to Friday, 9am - 6pm EST. Closed on weekends and public holidays."
+  },
+  {
+    "question": "How do I track my order?",
+    "answer": "You'll receive a tracking link by email as soon as your order ships. You can also check order status in your account dashboard."
+  },
+  {
+    "question": "Can I cancel my subscription?",
+    "answer": "Yes, you can cancel anytime from your account settings. You'll keep access until the end of your current billing period."
+  },
+  {
+    "question": "Do you ship internationally?",
+    "answer": "Yes, we ship to over 40 countries. International orders typically take 7-14 business days to arrive."
+  },
+  {
+    "question": "How do I contact support?",
+    "answer": "You can reach our support team at support@example.com or through the live chat widget in the bottom-right corner of our site."
+  }
+]
