@@ -1,5 +1,6 @@
 const express = require("express");
 const { prisma } = require("../lib/prisma");
+const { asyncHandler } = require("../lib/asyncHandler");
 
 const router = express.Router();
 
@@ -9,7 +10,7 @@ function startOfTodayUtc() {
 }
 
 // GET /api/stats?conversationId=... — footer counters.
-router.get("/stats", async (req, res) => {
+router.get("/stats", asyncHandler(async (req, res) => {
   const { conversationId } = req.query;
 
   const [messageCount, feedbackToday] = await Promise.all([
@@ -20,6 +21,6 @@ router.get("/stats", async (req, res) => {
   ]);
 
   res.json({ messageCount, feedbackToday });
-});
+}));
 
 module.exports = router;

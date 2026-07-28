@@ -24,6 +24,13 @@ app.get(/^(?!\/api).*/, (req, res) => {
   res.sendFile(path.join(clientDist, "index.html"));
 });
 
+// Catches errors passed via next(err) (see asyncHandler) so a failed
+// request — e.g. a DB hiccup — returns a 500 instead of crashing the process.
+app.use((err, req, res, next) => {
+  console.error(err);
+  res.status(500).json({ error: "Internal server error" });
+});
+
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });

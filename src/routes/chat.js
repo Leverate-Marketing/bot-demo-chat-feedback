@@ -1,11 +1,12 @@
 const express = require("express");
 const { prisma } = require("../lib/prisma");
 const { getBotReply } = require("../lib/botReply");
+const { asyncHandler } = require("../lib/asyncHandler");
 
 const router = express.Router();
 
 // POST /api/chat — save the user's message, generate + save the bot's reply.
-router.post("/chat", async (req, res) => {
+router.post("/chat", asyncHandler(async (req, res) => {
   const { conversationId, message } = req.body || {};
 
   if (typeof conversationId !== "string" || conversationId.trim() === "") {
@@ -34,21 +35,21 @@ router.post("/chat", async (req, res) => {
   });
 
   res.json({ userMessage, botMessage });
-});
+}));
 
 // GET /api/conversations/:id/messages — load history (supports resuming a
 // session after a page reload, since the client keeps the same id).
-router.get("/conversations/:id/messages", async (req, res) => {
+router.get("/conversations/:id/messages", asyncHandler(async (req, res) => {
   const messages = await prisma.message.findMany({
     where: { conversationId: req.params.id },
     orderBy: { createdAt: "asc" },
     include: { feedback: true },
   });
   res.json({ messages });
-});
+}));
 
 // POST /api/conversations/:id/finish — mark a conversation as ended.
-router.post("/conversations/:id/finish", async (req, res) => {
+router.post("/conversations/:id/finish", asyncHandler(async (req, res) => {
   const conversation = await prisma.conversation.findUnique({
     where: { id: req.params.id },
   });
@@ -61,6 +62,6 @@ router.post("/conversations/:id/finish", async (req, res) => {
     data: { endedAt: new Date() },
   });
   res.json({ conversation: updated });
-});
+}));
 
 module.exports = router;
