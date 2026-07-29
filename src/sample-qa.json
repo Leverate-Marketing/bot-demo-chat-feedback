@@ -1,34 +1,62 @@
 [
   {
-    "question": "What are your shipping times?",
-    "answer": "Standard shipping takes 3-5 business days. Express shipping takes 1-2 business days."
+    "question": "What is Leverate?",
+    "answer": "Leverate is a global B2B fintech technology provider for the online trading industry. We help brokers and prop firms launch and grow with a complete suite — trading platforms, CRM, bridge, risk management, liquidity, and more."
   },
   {
-    "question": "Do you offer refunds?",
-    "answer": "Yes, within 30 days of purchase with proof of purchase."
+    "question": "Where are you based?",
+    "answer": "Our headquarters is in Tel Aviv, with offices in Dubai and China, and a regulated entity in Mauritius."
   },
   {
-    "question": "How much does it cost?",
-    "answer": "Pricing starts at $19/month for the basic plan. Check our pricing page for full details on all tiers."
+    "question": "Are you a broker?",
+    "answer": "No. Leverate is a technology provider for brokers. We do not offer trading services to retail traders."
   },
   {
-    "question": "What are your business hours?",
-    "answer": "We're open Monday to Friday, 9am - 6pm EST. Closed on weekends and public holidays."
+    "question": "Do you work with MT4 / MT5?",
+    "answer": "Yes. Our CRM, Client Zone, bridge and risk tools work with both MetaTrader 4 and MetaTrader 5, alongside our own Leverate Trading platform."
   },
   {
-    "question": "How do I track my order?",
-    "answer": "You'll receive a tracking link by email as soon as your order ships. You can also check order status in your account dashboard."
+    "question": "Do you provide TradingView?",
+    "answer": "Yes — Leverate is a TradingView partner, and we offer TradingView integration inside our ecosystem."
   },
   {
-    "question": "Can I cancel my subscription?",
-    "answer": "Yes, you can cancel anytime from your account settings. You'll keep access until the end of your current billing period."
+    "question": "Can you help me get regulated?",
+    "answer": "Regulation is the responsibility of each broker, but our team can refer you to trusted partners that assist with licensing in different jurisdictions. Let's set up a call to discuss your project."
   },
   {
-    "question": "Do you ship internationally?",
-    "answer": "Yes, we ship to over 40 countries. International orders typically take 7-14 business days to arrive."
+    "question": "What does it cost?",
+    "answer": "Pricing depends on the components you need and the scale of your project. Our team will put together a tailored proposal after a short discovery call. Want me to set that up?"
   },
   {
-    "question": "How do I contact support?",
-    "answer": "You can reach our support team at support@example.com or through the live chat widget in the bottom-right corner of our site."
+    "question": "How long does it take to launch a brokerage?",
+    "answer": "Timelines vary based on regulation, branding, and integrations, but a turnkey setup can often go live in a matter of days. Our team can walk you through a project plan on a call."
+  },
+  {
+    "question": "Do you support crypto?",
+    "answer": "Yes — we offer a turnkey crypto exchange solution and CFD trading on crypto pairs via our platform."
+  },
+  {
+    "question": "Do you support prop firms?",
+    "answer": "Yes — we have a dedicated prop firm configuration that includes challenge accounts, evaluation workflows, scaling rules, and netting accounts."
+  },
+  {
+    "question": "Is your platform mobile?",
+    "answer": "Yes — our white-label trading platform is available on web, iOS, and Android, with full feature parity across devices."
+  },
+  {
+    "question": "What languages does your trading platform support?",
+    "answer": "Many, including English, Spanish, Portuguese, Arabic, Chinese and other Asian languages, with localized versions for specific markets."
+  },
+  {
+    "question": "Can I see a demo?",
+    "answer": "Absolutely — that's exactly what the discovery call is for. Our specialist will walk you through a live demo tailored to your project. Want me to set that up?"
+  },
+  {
+    "question": "Can I speak to a human?",
+    "answer": "Of course — I'll connect you with one of our specialists. To do that quickly, can I grab your name and email?"
+  },
+  {
+    "question": "Do you have a prediction markets platform?",
+    "answer": "Yes — our white-label prediction markets platform lets users speculate on real-world event outcomes (sports, politics, crypto, economics, and more). It runs fully under your brand — your traders never know there's a technology partner behind it."
   }
 ]
