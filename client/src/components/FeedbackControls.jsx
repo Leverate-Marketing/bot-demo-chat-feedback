@@ -21,7 +21,7 @@ function ThumbIcon({ direction, filled }) {
   );
 }
 
-export default function FeedbackControls({ messageId, initialFeedback }) {
+export default function FeedbackControls({ messageId, initialFeedback, onSubmitted }) {
   const [submittedRating, setSubmittedRating] = useState(initialFeedback?.rating ?? null);
   const [openRating, setOpenRating] = useState(null);
   const [comment, setComment] = useState("");
@@ -49,6 +49,7 @@ export default function FeedbackControls({ messageId, initialFeedback }) {
       setOpenRating(null);
       setShowThanks(true);
       setTimeout(() => setShowThanks(false), 2500);
+      onSubmitted?.();
     } catch (err) {
       setError(err.message || "Could not submit feedback");
     } finally {

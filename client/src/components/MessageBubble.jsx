@@ -1,7 +1,7 @@
 import BotAvatar from "./BotAvatar.jsx";
 import FeedbackControls from "./FeedbackControls.jsx";
 
-export default function MessageBubble({ message }) {
+export default function MessageBubble({ message, onFeedbackSubmitted }) {
   const isUser = message.role === "user";
 
   if (isUser) {
@@ -21,7 +21,11 @@ export default function MessageBubble({ message }) {
         <div className="rounded-2xl rounded-tl-sm bg-gray-100 px-4 py-2.5 text-sm text-gray-800">
           {message.content}
         </div>
-        <FeedbackControls messageId={message.id} initialFeedback={message.feedback?.[0]} />
+        <FeedbackControls
+          messageId={message.id}
+          initialFeedback={message.feedback?.[0]}
+          onSubmitted={onFeedbackSubmitted}
+        />
       </div>
     </div>
   );
