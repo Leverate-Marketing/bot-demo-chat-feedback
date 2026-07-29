@@ -1,5 +1,9 @@
 [
   {
+    "question": "Tell me about Leverate",
+    "answer": "Leverate is a leading B2B fintech technology provider for the online trading industry. We supply brokers and prop firms with the complete technology stack they need to launch, run and scale their business — trading platforms, CRM, client zone, bridge, risk management, liquidity, and prediction market platforms — all backed by 24/7 support."
+  },
+  {
     "question": "What is Leverate?",
     "answer": "Leverate is a global B2B fintech technology provider for the online trading industry. We help brokers and prop firms launch and grow with a complete suite — trading platforms, CRM, bridge, risk management, liquidity, and more."
   },
@@ -8,8 +12,64 @@
     "answer": "Our headquarters is in Tel Aviv, with offices in Dubai and China, and a regulated entity in Mauritius."
   },
   {
+    "question": "When was Leverate founded?",
+    "answer": "Leverate is a long-established technology provider in the FX/CFD industry, with 19 years of experience serving brokers globally."
+  },
+  {
+    "question": "Who do you serve?",
+    "answer": "Companies and individuals planning to launch a CFD/FX brokerage or prop firm, and existing brokers or prop firms upgrading their tech stack."
+  },
+  {
+    "question": "Why should I choose Leverate?",
+    "answer": "An end-to-end solution under one roof, 24/7 support, dedicated success managers, proven scale, and 19 years of industry experience."
+  },
+  {
     "question": "Are you a broker?",
     "answer": "No. Leverate is a technology provider for brokers. We do not offer trading services to retail traders."
+  },
+  {
+    "question": "Are you regulated?",
+    "answer": "Leverate is a technology provider, not a regulated broker. One of our entities holds a specific regulatory license for limited operations only — our team can walk you through the details on a call."
+  },
+  {
+    "question": "What is the Leverate Trading Platform?",
+    "answer": "Our proprietary multi-asset trading platform for brokers and prop firms — available on web, mobile, and desktop. It supports CFDs on FX, indices, commodities, stocks, and crypto, with modern UX, social/copy trading, multi-language support, and hedging and netting account models."
+  },
+  {
+    "question": "What is your CRM (LXCRM)?",
+    "answer": "LXCRM is our purpose-built CRM for brokers. It manages leads, clients, KYC, marketing automation, sales workflows, and reporting, and integrates with the trading platform and Client Zone."
+  },
+  {
+    "question": "What is Client Zone?",
+    "answer": "Client Zone (or Client Office) is the trader's account area — registration, KYC, deposits, withdrawals, and document upload. It's fully white-labeled and customizable per broker brand."
+  },
+  {
+    "question": "What is LXBridge?",
+    "answer": "LXBridge is our bridge and liquidity routing engine. It connects the broker to liquidity providers and manages execution, A/B book routing, and risk management, for brokers on MT4/MT5 or Sirix."
+  },
+  {
+    "question": "What risk management tools do you offer?",
+    "answer": "Real-time risk dashboards and controls — exposure monitoring, automated alerts, P&L tracking, A-book/B-book management, and dealer tools."
+  },
+  {
+    "question": "What liquidity do you provide?",
+    "answer": "We provide liquidity connectivity through tier-1 and aggregated liquidity sources, available to brokers using our bridge."
+  },
+  {
+    "question": "Do you have a prediction markets platform?",
+    "answer": "Yes — our white-label prediction markets platform lets users speculate on real-world event outcomes (sports, politics, crypto, economics, and more). It runs fully under your brand — your traders never know there's a technology partner behind it."
+  },
+  {
+    "question": "What is a turnkey CFD brokerage?",
+    "answer": "A bundled package combining platform, CRM, Client Zone, bridge, liquidity, and support — designed for new brokers who want one vendor, one contract, and one support team."
+  },
+  {
+    "question": "Do you support prop firms?",
+    "answer": "Yes — we have a dedicated prop firm configuration that includes challenge accounts, evaluation workflows, scaling rules, and netting accounts."
+  },
+  {
+    "question": "What integrations do you support?",
+    "answer": "We're a TradingView partner, offering TradingView charts inside the Sirix ecosystem, and our CRM, Client Zone, bridge and risk tools all work with MetaTrader 4 and 5."
   },
   {
     "question": "Do you work with MT4 / MT5?",
@@ -18,6 +78,14 @@
   {
     "question": "Do you provide TradingView?",
     "answer": "Yes — Leverate is a TradingView partner, and we offer TradingView integration inside our ecosystem."
+  },
+  {
+    "question": "Who are your typical customers?",
+    "answer": "Mainly three types: aspiring brokers launching for the first time, existing brokers upgrading a specific component or migrating from another vendor, and prop firm operators needing netting accounts, evaluation workflows, and scaling rules."
+  },
+  {
+    "question": "How are you better than a competitor?",
+    "answer": "Great question. Every provider has trade-offs — the right comparison really depends on what you're optimizing for: speed-to-launch, depth of features, support model, or cost structure. Our team puts together a side-by-side based on your specific project. Want me to set that up?"
   },
   {
     "question": "Can you help me get regulated?",
@@ -36,10 +104,6 @@
     "answer": "Yes — we offer a turnkey crypto exchange solution and CFD trading on crypto pairs via our platform."
   },
   {
-    "question": "Do you support prop firms?",
-    "answer": "Yes — we have a dedicated prop firm configuration that includes challenge accounts, evaluation workflows, scaling rules, and netting accounts."
-  },
-  {
     "question": "Is your platform mobile?",
     "answer": "Yes — our white-label trading platform is available on web, iOS, and Android, with full feature parity across devices."
   },
@@ -56,7 +120,67 @@
     "answer": "Of course — I'll connect you with one of our specialists. To do that quickly, can I grab your name and email?"
   },
   {
-    "question": "Do you have a prediction markets platform?",
-    "answer": "Yes — our white-label prediction markets platform lets users speculate on real-world event outcomes (sports, politics, crypto, economics, and more). It runs fully under your brand — your traders never know there's a technology partner behind it."
+    "question": "What returns can I expect?",
+    "answer": "I can't make claims about returns or guaranteed performance — that's something our team can walk you through with real, verified data on a call. Want me to set that up?"
+  },
+  {
+    "question": "I'm just looking around.",
+    "answer": "Totally understandable. Even at the research stage, a short call can save you weeks of comparing vendors. Want me to set up a 30-minute walkthrough?"
+  },
+  {
+    "question": "Send me an email instead.",
+    "answer": "Happy to. What's the best email to reach you on? Our team will follow up there."
+  },
+  {
+    "question": "I want to compare you to a competitor first.",
+    "answer": "Smart move. Our team can put together a side-by-side based on your specific project — usually much more useful than spec sheets. Want me to set that up?"
+  },
+  {
+    "question": "I don't have a budget yet.",
+    "answer": "No problem — most of our customers start there. The first call is just to understand your project; pricing comes later. Shall we set it up?"
+  },
+  {
+    "question": "I need to think about it.",
+    "answer": "Of course. Want me to send you a short overview to read in the meantime, and pencil in a call for next week?"
+  },
+  {
+    "question": "I'm not the decision maker.",
+    "answer": "Got it. Would it help to include the decision maker on the call? We're happy to walk both of you through it together."
+  },
+  {
+    "question": "What is a CFD?",
+    "answer": "CFD stands for Contract for Difference — a financial derivative."
+  },
+  {
+    "question": "What is FX?",
+    "answer": "FX is foreign exchange — currency trading."
+  },
+  {
+    "question": "What is a prop firm?",
+    "answer": "A prop firm (proprietary trading firm) is a company that funds traders to trade with the firm's own capital."
+  },
+  {
+    "question": "What is a bridge?",
+    "answer": "A bridge is the software layer that routes trade execution between trading platforms and liquidity providers."
+  },
+  {
+    "question": "What is a liquidity provider?",
+    "answer": "A liquidity provider (LP) is an institution that provides tradeable prices and execution to a broker."
+  },
+  {
+    "question": "What is the difference between A-book and B-book?",
+    "answer": "A-book and B-book are risk management models — A-book hedges trades externally, while B-book keeps them internally."
+  },
+  {
+    "question": "What is the difference between netting and hedging accounts?",
+    "answer": "These are two ways trading accounts handle positions — netting consolidates same-symbol positions, while hedging keeps them separate."
+  },
+  {
+    "question": "What does turnkey mean?",
+    "answer": "Turnkey means a complete, ready-to-launch package."
+  },
+  {
+    "question": "What is KYC?",
+    "answer": "KYC (Know Your Customer) is the identity verification process required by regulators."
   }
 ]

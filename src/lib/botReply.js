@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { findBestMatch } = require("./matchQuestion");
+const { getRoutingReply } = require("./countryRouting");
 
 const SAMPLE_QA_PATH = path.join(__dirname, "..", "sample-qa.json");
 const NO_MATCH_REPLY =
@@ -19,6 +20,11 @@ function loadSampleQa() {
  * and neither the API route nor the frontend need to change.
  */
 async function getBotReply(conversationId, userMessage) {
+  const routingReply = getRoutingReply(userMessage);
+  if (routingReply) {
+    return `(sample answer for testing) ${routingReply}`;
+  }
+
   const qaPairs = loadSampleQa();
   const match = findBestMatch(userMessage, qaPairs);
 

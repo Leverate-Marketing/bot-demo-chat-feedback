@@ -3,6 +3,8 @@ const STOPWORDS = new Set([
   "i", "you", "your", "my", "me", "to", "of", "for", "in", "on", "at",
   "and", "or", "it", "this", "that", "can", "could", "will", "would",
   "what", "how", "when", "where", "why", "with", "have", "has", "be",
+  "get", "got", "need", "want", "some", "any",
+  "tell", "about", "support", "offer", "provide", "work",
 ]);
 
 // Very naive stemming (plurals, -ing, -ed) so "refund" matches "refunds",
@@ -26,11 +28,14 @@ function tokenize(text) {
 }
 
 /**
- * Overlap coefficient (intersection / smaller set size) between the token
- * sets of two strings — more forgiving than Jaccard when a short user
- * message is matched against a longer, more descriptive sample question.
- * Keyword-overlap based — deliberately simple, this is a Phase 1 stand-in
- * for real NLU that will land in Phase 2.
+ * Dice/Sorensen coefficient (2 * intersection / (|A| + |B|)) between the
+ * token sets of two strings. Unlike a plain overlap coefficient, this still
+ * penalizes matches where the candidate question has a lot of extra,
+ * non-matching words — otherwise a single-word query like "cfd" scores a
+ * perfect match against *any* question containing that word, regardless of
+ * length (e.g. it would tie "What is a CFD?" with "What is a turnkey CFD
+ * brokerage?"). Keyword-overlap based — deliberately simple, this is a
+ * Phase 1 stand-in for real NLU that will land in Phase 2.
  */
 function similarity(a, b) {
   const tokensA = new Set(tokenize(a));
@@ -41,10 +46,10 @@ function similarity(a, b) {
   for (const token of tokensA) {
     if (tokensB.has(token)) intersection += 1;
   }
-  return intersection / Math.min(tokensA.size, tokensB.size);
+  return (2 * intersection) / (tokensA.size + tokensB.size);
 }
 
-const MATCH_THRESHOLD = 0.4;
+const MATCH_THRESHOLD = 0.35;
 
 /**
  * Finds the best matching Q&A pair for a user message.
